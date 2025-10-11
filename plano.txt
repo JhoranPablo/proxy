@@ -1,0 +1,17 @@
+Catálogo de produtos (com imagem, preço, descrição)
+
+Página de detalhes do produto
+
+Carrinho de compras
+
+Cadastro e login de usuário
+
+Checkout com cálculo de total
+
+Integração com pagamento (Pix, cartão)
+
+Área administrativa para ver pedidos
+
+Banco de dados para usuários, pedidos, produtos
+
+(Opcional) Frete, cupom de desconto, e-mail, notificações, etc.

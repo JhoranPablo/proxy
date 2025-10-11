@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="/styles.css">
     <title>Login - Proxy</title>
 </head>
 <body>
+
+     <div class="bubbles">
+  <span style="--i:11;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:13;"></span>
+</div>
+
     <header>
-            <h1>PROXYS</h1>
+            <a onclick="mostrarConteudo('inicio')" class="inicio">PROXYS</a>
             <button class="btn-login">Entrar</button>
             <button class="btn-car">Carrinho</button>
     </header>
@@ -18,10 +31,10 @@
         <form class="form1">
             <h1>Entrar</h1>
             <label>Email</label>
-            <input type="email">
+            <input type="email" required>
             
             <label>Senha</label>
-            <input type="password">
+            <input type="password" required>
             <button type="submit">Entrar</button>
             <a>Perdeu sua senha?</a>
         </form>
@@ -29,11 +42,11 @@
         <form class="form2">
             <h1>Cadastre-se</h1>
             <label>Endereço de email</label>
-            <input type="email">
+            <input type="email" required>
             <label>Senha</label>
-            <input type="password">
+            <input type="password" required>
             <label>Confirmar Senha</label>
-            <input>
+            <input type="password" required>
             <button type="submit">Cadastrar</button>
         </form>
     </div>
@@ -55,4 +68,5 @@ Mais de 8 mil clientes satisfeitos.</td>
         <p>Política de Privacidade | Termos de Uso</p>
     </footer>
 </body>
+<script src="./script.js"></script>
 </html>

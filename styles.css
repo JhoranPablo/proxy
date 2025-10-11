@@ -71,6 +71,7 @@ header{
     color: white;
     margin-bottom: 20px;
     
+    
 }
 
 .price{
@@ -130,6 +131,7 @@ img{
     margin-top: 30px;
     border-radius: 5px;
     border-bottom: 1px solid;
+
 }
 
 .container-cards2{
@@ -145,7 +147,7 @@ img{
 }
 
 .card {
-  background: #fff;
+  background: black;
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -188,6 +190,7 @@ img{
     box-shadow: 0 0 15px rgba(0,123,255,0.4), 0 0 30px rgba(0,123,255,0.15);
     font-size: 25px;
     
+    
 
 }
 
@@ -220,3 +223,313 @@ footer p {
     margin-right: 30px;
     color: gray;
 }
+
+/* ======== BOLHAS DE FUNDO ======== */
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* fica atrás de tudo */
+}
+
+.bubbles span {
+  position: absolute;
+  bottom: -150px;
+  background: rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4), 0 0 40px rgba(0, 123, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 15s linear infinite;
+  animation-duration: calc(100s / var(--i));
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-110vh) scale(0.7);
+    opacity: 0;
+  }
+}
+
+/* tamanhos e posições variadas */
+.bubbles span:nth-child(1) { width: 40px; height: 40px; left: 10%; }
+.bubbles span:nth-child(2) { width: 20px; height: 20px; left: 25%; }
+.bubbles span:nth-child(3) { width: 50px; height: 50px; left: 40%; }
+.bubbles span:nth-child(4) { width: 35px; height: 35px; left: 55%; }
+.bubbles span:nth-child(5) { width: 25px; height: 25px; left: 70%; }
+.bubbles span:nth-child(6) { width: 60px; height: 60px; left: 80%; }
+.bubbles span:nth-child(7) { width: 30px; height: 30px; left: 90%; }
+.bubbles span:nth-child(8) { width: 15px; height: 15px; left: 15%; }
+.bubbles span:nth-child(9) { width: 25px; height: 25px; left: 50%; }
+.bubbles span:nth-child(10){ width: 45px; height: 45px; left: 75%; }
+
+/* deixar o conteúdo acima delas */
+header, main, footer {
+  position: relative;
+  z-index: 2;
+}
+
+.container-product1 img {
+  width: 600px;
+  height: 600px;
+}
+
+.container-product1, .content-product1{
+  color: white;
+  display: flex;
+
+}
+
+.container-product1 img {
+  width: 600px;              /* reduz o tamanho da imagem */
+  height: auto;              /* mantém proporção */
+  border-radius: 10px;
+}
+
+.content-product1 {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid;
+  height: 56vh;
+  padding-left: 20px;
+  margin-top: 30px;
+
+}
+
+.container-product1, .content-product1 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* opcional, pra ajustar espaçamento */
+.container-product1 {
+  margin-right: 20px;
+  margin-left: 500px;
+ 
+}
+
+.container-product1 input{
+  width: 80px;
+  height: 40px;
+  margin-top: 30px;padding-left: 15px;
+  font-size: 17px;
+
+}
+
+
+
+.container-product1 button{
+margin-left: 20px;
+border: none;
+
+}
+
+
+.inicio{
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.inicio:hover{
+ background-color: transparent;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.details-product2 img {
+  width: 600px;
+  height: 600px;
+}
+
+.details-product2, .content-product1{
+  color: white;
+  display: flex;
+
+}
+
+.details-product2 img {
+  width: 600px;              /* reduz o tamanho da imagem */
+  height: auto;              /* mantém proporção */
+  border-radius: 10px;
+}
+
+.content-product1 {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid;
+  height: 56vh;
+  padding-left: 20px;
+  margin-top: 30px;
+
+}
+
+.details-product2, .content-product1 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* opcional, pra ajustar espaçamento */
+.details-product2 {
+  margin-right: 20px;
+  margin-left: 500px;
+ 
+}
+
+.details-product2 input{
+  width: 80px;
+  height: 40px;
+  margin-top: 30px;padding-left: 15px;
+  font-size: 17px;
+
+}
+
+
+
+.details-product2 button{
+margin-left: 20px;
+border: none;
+
+}
+
+
+
+
+
+
+
+
+
+.details-product3 img {
+  width: 600px;
+  height: 600px;
+}
+
+.details-product3, .content-product1{
+  color: white;
+  display: flex;
+
+}
+
+.details-product3 img {
+  width: 600px;              /* reduz o tamanho da imagem */
+  height: auto;              /* mantém proporção */
+  border-radius: 10px;
+}
+
+.content-product1 {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid;
+  height: 56vh;
+  padding-left: 20px;
+  margin-top: 30px;
+
+}
+
+.details-product3, .content-product1 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* opcional, pra ajustar espaçamento */
+.details-product3 {
+  margin-right: 20px;
+  margin-left: 500px;
+ 
+}
+
+.details-product3 input{
+  width: 80px;
+  height: 40px;
+  margin-top: 30px;padding-left: 15px;
+  font-size: 17px;
+
+}
+
+
+
+.details-product4 button{
+margin-left: 20px;
+border: none;
+
+}
+
+
+.details-product4 img {
+  width: 600px;
+  height: 600px;
+}
+
+.details-product4, .content-product1{
+  color: white;
+  display: flex;
+
+}
+
+.details-product4 img {
+  width: 600px;              /* reduz o tamanho da imagem */
+  height: auto;              /* mantém proporção */
+  border-radius: 10px;
+}
+
+.content-product1 {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid;
+  height: 56vh;
+  padding-left: 20px;
+  margin-top: 30px;
+
+}
+
+.details-product4, .content-product1 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* opcional, pra ajustar espaçamento */
+.details-product4 {
+  margin-right: 20px;
+  margin-left: 500px;
+ 
+}
+
+.details-product4 input{
+  width: 80px;
+  height: 40px;
+  margin-top: 30px;padding-left: 15px;
+  font-size: 17px;
+
+}
+
+
+
+.details-product4 button{
+margin-left: 20px;
+border: none;
+
+}
+
+
+
